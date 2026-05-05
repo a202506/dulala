@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>杜拉拉系列</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f4ec;
+      --surface: #fffdf8;
+      --text: #2b2925;
+      --muted: #6d675c;
+      --line: #d9d1c2;
+      --accent: #8a4b2a;
+      --accent-strong: #65351e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Noto Serif CJK SC", "Songti SC", SimSun, serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 64px;
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .book-list {
+      display: grid;
+      gap: 28px;
+    }
+
+    .book {
+      display: grid;
+      grid-template-columns: minmax(220px, 400px) 1fr;
+      gap: 28px;
+      align-items: start;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .cover-link {
+      display: block;
+      width: min(100%, 200px);
+    }
+
+    .cover {
+      display: block;
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #eee8dc;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 6px 12px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      color: var(--accent-strong);
+      text-decoration: none;
+      font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .links a:hover,
+    .links a:focus {
+      background: var(--accent);
+      color: #fffdf8;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 20px, 520px);
+        padding-top: 24px;
+      }
+
+      .book {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>杜拉拉系列</h1>
+    <section class="book-list" aria-label="图书列表">
+      <article class="book">
+        <a class="cover-link" href="1.html" aria-label="打开杜拉拉升职记 HTML 版">
+          <img class="cover" src="images/1.jpg" alt="杜拉拉升职记封面" width="200">
+        </a>
+        <div>
+          <h2>杜拉拉升职记</h2>
+          <ul class="links">
+            <li><a href="1.pdf">PDF</a></li>
+            <li><a href="1.html">HTML 文本</a></li>
+            <li><a href="https://dulala.netlify.app/1.html">HTML 文本 dulala.netlify.app</a></li>
+          </ul>
+          <p>杜拉拉从国企、民企辗转进入外企 DB，在行政与人事岗位上应对上司、同事和项目压力。小说写她从职场新人到管理者的成长，也穿插爱情选择与职业定位。</p>
+        </div>
+      </article>
+
+      <article class="book">
+        <a class="cover-link" href="2.html" aria-label="打开杜拉拉2 华年似水 HTML 版">
+          <img class="cover" src="images/2.jpg" alt="杜拉拉2 华年似水封面" width="200">
+        </a>
+        <div>
+          <h2>杜拉拉2 华年似水</h2>
+          <ul class="links">
+            <li><a href="2.pdf">PDF</a></li>
+            <li><a href="2.html">HTML 文本</a></li>
+            <li><a href="https://dulala.netlify.app/2.html">HTML 文本 dulala.netlify.app</a></li>
+          </ul>
+          <p>拉拉遭遇离职、感情失落和职业瓶颈，在房价、晋升、组织改革与人际关系的夹击下重新判断定位。故事关注时机、选择和职场筹码，写她如何寻找翻盘机会。</p>
+        </div>
+      </article>
+
+      <article class="book">
+        <a class="cover-link" href="3.html" aria-label="打开杜拉拉3 我在这战斗的一年里 HTML 版">
+          <img class="cover" src="images/3.jpg" alt="杜拉拉3 我在这战斗的一年里封面" width="200">
+        </a>
+        <div>
+          <h2>杜拉拉3 我在这战斗的一年里</h2>
+          <ul class="links">
+            <li><a href="3.pdf">PDF</a></li>
+            <li><a href="3.html">HTML 文本</a></li>
+            <li><a href="https://dulala.netlify.app/3.html">HTML 文本 dulala.netlify.app</a></li>
+          </ul>
+          <p>拉拉离开工作多年的 DB，进入五百强企业 SH 担任薪酬福利经理。新环境带来扩张期的人事斗争、专业挑战和感情重聚后的复杂关系，她开始新一轮职场博弈。</p>
+        </div>
+      </article>
+
+      <article class="book">
+        <a class="cover-link" href="4.html" aria-label="打开杜拉拉大结局 与理想有关 HTML 版">
+          <img class="cover" src="images/4.jpg" alt="杜拉拉大结局 与理想有关封面" width="200">
+        </a>
+        <div>
+          <h2>杜拉拉大结局 与理想有关</h2>
+          <ul class="links">
+            <li><a href="4.pdf">PDF</a></li>
+            <li><a href="4.html">HTML 文本</a></li>
+            <li><a href="https://dulala.netlify.app/4.html">HTML 文本 dulala.netlify.app</a></li>
+          </ul>
+          <p>拉拉在 SH 面对薪酬制度难题，努力推进宽带薪酬制，同时受到创业诱惑和婚后变故冲击。结局聚焦她从青涩到练达的成长，以及对理想与行动的坚持。</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
